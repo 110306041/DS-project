@@ -23,7 +23,7 @@ public class GoogleQuery{
 		kLst = new KeywordList();
 		String encodedKeyword = java.net.URLEncoder.encode(searchKeyword,"utf-8");
 		this.searchKeyword = encodedKeyword;
-		this.url = "http://www.google.com/search?q=" + this.searchKeyword + "&oe=utf8&num=50";
+		this.url = "http://www.google.com/search?q=" + this.searchKeyword + "3C&oe=utf8&num=50";
 
 	}
 	
@@ -66,92 +66,70 @@ public class GoogleQuery{
 				}
 				WebPage rootPage = new WebPage(citeUrl,title);		
 				WebTree tree = new WebTree(rootPage);
-					
+				
 				ArrayList<Keyword> lst = new ArrayList<Keyword>();
-				String s1 = new String("音樂祭".getBytes("GBK"),"UTF-8");
+				String s1 = new String("手機".getBytes("GBK"),"UTF-8");
 				lst.add(new Keyword(s1, 20.0));
-				String s2 = new String("台灣".getBytes("GBK"),"UTF-8");
-				lst.add(new Keyword(s2, 4.5));
-				String s3 = new String("臺灣".getBytes("GBK"),"UTF-8");
-				lst.add(new Keyword(s3, 4.5));
-				String s4 = new String("獨立音樂".getBytes("GBK"),"UTF-8");
-				lst.add(new Keyword(s4, 10.0));
-				String s401 = new String("樂團".getBytes("GBK"),"UTF-8");
-				lst.add(new Keyword(s401, 10.0));
-				String s402 = new String("獨立樂團".getBytes("GBK"),"UTF-8");
-				lst.add(new Keyword(s402, 10.0));
-				String s501 = new String("陣容".getBytes("GBK"),"UTF-8");
-				lst.add(new Keyword(s501, 3.0));
-				String s502 = new String("票價".getBytes("GBK"),"UTF-8");
-				lst.add(new Keyword(s502, 3.0));
-				String s503 = new String("開賣".getBytes("GBK"),"UTF-8");
-				lst.add(new Keyword(s503, 3.0));
-				String s5 = new String("搖滾".getBytes("GBK"),"UTF-8");
-				lst.add(new Keyword(s5, 3.0));
-				String s6 = new String("金屬".getBytes("GBK"),"UTF-8");
-				lst.add(new Keyword(s6, 3.0));
-				String s7 = new String("龐克".getBytes("GBK"),"UTF-8");
-				lst.add(new Keyword(s7, 3.0));
-				String s8 = new String("另類".getBytes("GBK"),"UTF-8");
-				lst.add(new Keyword(s8, 3.0));
-				String s9 = new String("滅火器".getBytes("GBK"),"UTF-8");
-				lst.add(new Keyword(s9, 2.0));
-				String s10 = new String("怕胖團".getBytes("GBK"),"UTF-8");
-				lst.add(new Keyword(s10, 2.0));
-				String s11 = new String("血肉".getBytes("GBK"),"UTF-8");
-				lst.add(new Keyword(s11, 2.0));
-				String s12 = new String("閃靈".getBytes("GBK"),"UTF-8");
-				lst.add(new Keyword(s12, 2.0));
-				String s13 = new String("美秀".getBytes("GBK"),"UTF-8");
-				lst.add(new Keyword(s13, 2.0));
-				String s14 = new String("拍謝少年".getBytes("GBK"),"UTF-8");
-				lst.add(new Keyword(s14, 2.0));
-				String s15 = new String("老破麻".getBytes("GBK"),"UTF-8");
-				lst.add(new Keyword(s15, 2.0));
-				String s16 = new String("荷爾蒙少年".getBytes("GBK"),"UTF-8");
-				lst.add(new Keyword(s16, 2.0));
-				String s17 = new String("海豚刑警".getBytes("GBK"),"UTF-8");
-				lst.add(new Keyword(s17, 2.0));
-				String s18 = new String("TB".getBytes("GBK"),"UTF-8");
-				lst.add(new Keyword(s18, 2.0));	
-				String s19 = new String("無妄".getBytes("GBK"),"UTF-8");
-				lst.add(new Keyword(s19, 2.0));
+				String s2 = new String("筆電".getBytes("GBK"),"UTF-8");
+				lst.add(new Keyword(s2, 20.0));
+				String s3 = new String("桌上型電腦".getBytes("GBK"),"UTF-8");
+				lst.add(new Keyword(s3, 20.0));
+				String s4 = new String("智慧手錶".getBytes("GBK"),"UTF-8");
+				lst.add(new Keyword(s4, 20.0));
+				String s401 = new String("平板電腦".getBytes("GBK"),"UTF-8");
+				lst.add(new Keyword(s401, 20.0));
+				String s402 = new String("耳機".getBytes("GBK"),"UTF-8");
+				lst.add(new Keyword(s402, 20.0));
+				String s501 = new String("Apple".getBytes("GBK"),"UTF-8");
+				lst.add(new Keyword(s501, 10.0));
+				String s502 = new String("Asus".getBytes("GBK"),"UTF-8");
+				lst.add(new Keyword(s502, 10.0));
+				String s503 = new String("小米".getBytes("GBK"),"UTF-8");
+				lst.add(new Keyword(s503, 10.0));
+				String s5 = new String("Samsung".getBytes("GBK"),"UTF-8");
+				lst.add(new Keyword(s5, 10.0));
+				String s6 = new String("Acer".getBytes("GBK"),"UTF-8");
+				lst.add(new Keyword(s6, 10.0));
+				String s7 = new String("Oppo".getBytes("GBK"),"UTF-8");
+				lst.add(new Keyword(s7, 10.0));
+				String s8 = new String("Sony".getBytes("GBK"),"UTF-8");
+				lst.add(new Keyword(s8, 10.0));
+				String s9 = new String("iphone".getBytes("GBK"),"UTF-8");
+				lst.add(new Keyword(s9, 8.0));
+				String s10 = new String("Macbook".getBytes("GBK"),"UTF-8");
+				lst.add(new Keyword(s10, 8.0));
+				String s11 = new String("iPad".getBytes("GBK"),"UTF-8");
+				lst.add(new Keyword(s11, 8.0));
+				String s12 = new String("Airpods".getBytes("GBK"),"UTF-8");
+				lst.add(new Keyword(s12, 8.0));
+				String s13 = new String("Zenphone".getBytes("GBK"),"UTF-8");
+				lst.add(new Keyword(s13, 8.0));
+				String s14 = new String("Zenbook".getBytes("GBK"),"UTF-8");
+				lst.add(new Keyword(s14, 8.0));
+				String s15 = new String("Vivobook".getBytes("GBK"),"UTF-8");
+				lst.add(new Keyword(s15, 8.0));
+				String s16 = new String("Note".getBytes("GBK"),"UTF-8");
+				lst.add(new Keyword(s16, 8.0));
+				String s17 = new String("Galaxy".getBytes("GBK"),"UTF-8");
+				lst.add(new Keyword(s17, 8.0));
+				String s18 = new String("Aspire".getBytes("GBK"),"UTF-8");
+				lst.add(new Keyword(s18, 8.0));	
+				String s19 = new String("Swift".getBytes("GBK"),"UTF-8");
+				lst.add(new Keyword(s19, 8.0));
 					
-				String s20 = new String("大港".getBytes("GBK"),"UTF-8");
-				lst.add(new Keyword(s20, 1.5));
-				String s201 = new String("大港開唱".getBytes("GBK"),"UTF-8");
-				lst.add(new Keyword(s201, 1.5));
-				String s202 = new String("開唱".getBytes("GBK"),"UTF-8");
-				lst.add(new Keyword(s202, 1.5));
-				String s21 = new String("浪人".getBytes("GBK"),"UTF-8");
-				lst.add(new Keyword(s21, 1.5));
-				String s22 = new String("漂游".getBytes("GBK"),"UTF-8");
-				lst.add(new Keyword(s22, 1.5));
-				String s23 = new String("火球祭".getBytes("GBK"),"UTF-8");
-				lst.add(new Keyword(s23, 1.5));
-				String s24 = new String("赤聲躁動".getBytes("GBK"),"UTF-8");
-				lst.add(new Keyword(s24, 1.5));
-					
-				String s25 = new String("山海屯".getBytes("GBK"),"UTF-8");
-				lst.add(new Keyword(s25, 1.5));
-				String s26 = new String("爛泥".getBytes("GBK"),"UTF-8");
-				lst.add(new Keyword(s26, 1.5));
-					 
-				String s27 = new String("五月天".getBytes("GBK"),"UTF-8");
-				lst.add(new Keyword(s27, -10.0));
-				String s28 = new String("周興哲".getBytes("GBK"),"UTF-8");
-				lst.add(new Keyword(s28, -10.0));
-				String s29 = new String("盧秀燕".getBytes("GBK"),"UTF-8");
-				lst.add(new Keyword(s29, -10.0));
-				String s30 = new String("流行音樂".getBytes("GBK"),"UTF-8");
-				lst.add(new Keyword(s30, -20.0));
-				String s301 = new String("人力銀行".getBytes("GBK"),"UTF-8");
-				lst.add(new Keyword(s301, -20.0));
-				String s302 = new String("臺語萌典".getBytes("GBK"),"UTF-8");
-				lst.add(new Keyword(s302, -20.0));
-				String s303 = new String("教育雲".getBytes("GBK"),"UTF-8");
-				lst.add(new Keyword(s303, -20.0));
-					
+				String s20 = new String("Reno".getBytes("GBK"),"UTF-8");
+				lst.add(new Keyword(s20, 8.0));
+				String s201 = new String("Xperia".getBytes("GBK"),"UTF-8");
+				lst.add(new Keyword(s201, 8.0));
+				String s202 = new String("使用說明書".getBytes("GBK"),"UTF-8");
+				lst.add(new Keyword(s202, 4.0));
+				String s21 = new String("型號".getBytes("GBK"),"UTF-8");
+				lst.add(new Keyword(s21, 4.0));
+				String s22 = new String("規格".getBytes("GBK"),"UTF-8");
+				lst.add(new Keyword(s22, 4.0));
+				String s23 = new String("尺寸".getBytes("GBK"),"UTF-8");
+				lst.add(new Keyword(s23, 4.0));
+				
 					
 					
 					

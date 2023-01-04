@@ -36,7 +36,8 @@ public class WebNode {
 	}
 	
 	public boolean isTheLastChild(){
-		if(this.parent == null) return true;
+
+		if(children.size()>=10 || this.parent == null) return true;
 		ArrayList<WebNode> siblings = this.parent.children;
 		
 		return this.equals(siblings.get(siblings.size() - 1));

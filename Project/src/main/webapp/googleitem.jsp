@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>MusicFesSearch</title>
+<title>3C-ProductsSearch</title>
 
 <style type="text/css">
 #padding{
@@ -24,14 +24,14 @@ text-decoration:underline;
 </style>
 </head>
 <body>
-<body style='background-color: #F2FFFF'>
+<body style = "background-image:url('https://imgur.com/hBZ5319.jpg');background-size: cover;background-position:5% 5%;background-repeat:no-repeat;" >
 
 <form action='${requestUri}' method='get'>
 
  
 
  
- <div style='position: absolute;background-color:#CCEEFF ;margin-top:100px;margin-left:230px;width:800px;height:400px;overflow:scroll'>
+ <div style='position: absolute;background-color:#FFF0AC ;margin-top:100px;margin-left:230px;width:800px;height:400px;overflow:scroll'>
  <div style='position: absolute;margin-top:10px;margin-left:50px'>
   <%
   String[][] orderList = (String[][]) request.getAttribute("query");
@@ -40,7 +40,7 @@ text-decoration:underline;
     
   %>
   
-  <a href='<%=s%>'><%=orderList[i][0]%> </a> <br>----------------------------------------------------------------<br>
+  <a href='<%=s%>'><%=orderList[i][0]%> </a> <br>*****************************************************************************<br>
   
   <%
 }
@@ -51,21 +51,22 @@ text-decoration:underline;
  
  
  <div>
- <a href ='http://localhost:8080/Final_Project/TestProject'><img src="images/band.png" style='position:absolute;width:70px;height:70px;left:50%;top:10%;margin-top:-47px;
- margin-left:-400px '></a>
+
  </div>
  
- <div>
+ <div style="text-align:center;
+   position: absolute;
+   top: 10%;
+   left: 55%;
+   margin: -30px 0 0 -500px;">
  <input type='text' class="border-style" id="padding"  
- style='font-size:120%;position:absolute;left:50%;top:10%;
- margin-top:-30px;margin-left:-300px;width:500px;height:45px' name='keyword' placeholder='請輸入關鍵字'
- onfocus="placeholder= '' " onblur="placeholder='請輸入關鍵字'" />
+ style='font-size:120%;width:500px;height:45px' name='keyword' placeholder='Please input the keyword'
+ onfocus="placeholder= '' " onblur="placeholder='Please input the keyword'" />
+ <input type='submit' value='Search'style="width:120px;height:45px;font-size:16px;font-color:#FDFFFF;border-style: hidden;background-color:#73BF00 "/>
  </div>
  
 <div>
-<input type='image' src="images/band-2.png" 
-style='position:absolute;width:142px;height:70px;left:50%;top:10%;margin-top:-30px;
-margin-left:230px '/>
+
 </div>
 
 

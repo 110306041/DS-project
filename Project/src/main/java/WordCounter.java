@@ -51,30 +51,5 @@ public class WordCounter {
     }
     
 
-//	public int countScore() {
-//		int score = 0;
-//		if (content == null) {
-//			score = 0;
-//			return score;
-//		}
-//		
-//		content = content.toUpperCase();
-//		for (Keyword keyword : keywordList.lst) {
-//			score = score + countKeyword(keyword.name);
-//		}
-//		return score;
-//	}
-//
-//	public int countKeyword(String keyword) {
-//		keyword = keyword.toUpperCase();
-//
-//		int retVal = 0, fromIndex = 0, found = -1;
-//		int i = found = content.indexOf(keyword, fromIndex);
-//		while (i != -1) {
-//			retVal += 1;
-//			fromIndex = found + keyword.length();
-//		}
-//		return retVal;
-//	}
     
 }
