@@ -23,7 +23,7 @@ public class GoogleQuery{
 		kLst = new KeywordList();
 		String encodedKeyword = java.net.URLEncoder.encode(searchKeyword,"utf-8");
 		this.searchKeyword = encodedKeyword;
-		this.url = "http://www.google.com/search?q=" + this.searchKeyword + "3C&oe=utf8&num=50";
+		this.url = "http://www.google.com/search?q=" + this.searchKeyword + "phone&oe=utf8&num=50";
 
 	}
 	
@@ -129,9 +129,24 @@ public class GoogleQuery{
 				lst.add(new Keyword(s22, 4.0));
 				String s23 = new String("尺寸".getBytes("GBK"),"UTF-8");
 				lst.add(new Keyword(s23, 4.0));
-				
-					
-					
+				String s24 = new String("衣服".getBytes("GBK"),"UTF-8");
+				lst.add(new Keyword(s24, -100.0));
+				String s25 = new String("褲子".getBytes("GBK"),"UTF-8");
+				lst.add(new Keyword(s25, -100.0));
+				String s26 = new String("洗衣".getBytes("GBK"),"UTF-8");
+				lst.add(new Keyword(s26, -100.0));
+				String s27 = new String("項鍊".getBytes("GBK"),"UTF-8");
+				lst.add(new Keyword(s27, -100.0));
+				String s28 = new String("玩具".getBytes("GBK"),"UTF-8");
+				lst.add(new Keyword(s28, -100.0));
+				String s29 = new String("娃娃".getBytes("GBK"),"UTF-8");
+				lst.add(new Keyword(s29, -100.0));
+				String s30 = new String("公仔".getBytes("GBK"),"UTF-8");
+				lst.add(new Keyword(s30, -100.0));
+				String s31 = new String("耳環".getBytes("GBK"),"UTF-8");
+				lst.add(new Keyword(s31, -100.0));
+				String s32 = new String("玩偶".getBytes("GBK"),"UTF-8");
+				lst.add(new Keyword(s32, -100.0));
 					
 				tree.setPostOrderScore(lst);
 				tree.eularPrintTree();	
